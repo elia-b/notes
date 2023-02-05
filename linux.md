@@ -1,10 +1,12 @@
-# Linux
+---
+layout: default
+title: Linux
+---
 
 ## Table of Contents
 
-- [Linux](#linux)
-  - [Table of Contents](#table-of-contents)
-  - [Reformat a Bootable USB-stick back to normal](#reformat-a-bootable-usb-stick-back-to-normal)
+- [Table of Contents](#table-of-contents)
+- [Reformat a Bootable USB-stick back to normal](#reformat-a-bootable-usb-stick-back-to-normal)
 
 ## Reformat a Bootable USB-stick back to normal
 

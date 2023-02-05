@@ -1,6 +1,8 @@
-# Python
+---
+layout: default
+title: Python
+---
 
 ## Table of Contents
 
-- [Python](#python)
-  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)

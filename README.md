@@ -1,4 +1,7 @@
-# My Notes
+---
+layout: default
+title: My Notes
+---
 
 my personal notes :notebook_with_decorative_cover:
 
@@ -10,3 +13,4 @@ my personal notes :notebook_with_decorative_cover:
 
 - [Linux](linux.md)
 - [Python](python.md)
+- [Jekyll](jekyll.md)
