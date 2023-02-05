@@ -1,10 +1,12 @@
 # My Notes
-my personal notes
 
-<details><summary>TO DO</summary>
-<p>
+my personal notes :notebook_with_decorative_cover:
 
-- [ ] create note keeping system
+- [Markdown help for notekeeping](md-utils.md)
 
-</p>
-</details>
+## Sections
+  
+### Tech-Skills
+
+- [Linux](linux.md)
+- [Python](python.md)
