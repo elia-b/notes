@@ -1,2 +1,0 @@
-# notes
-my personal notes
