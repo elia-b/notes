@@ -1,6 +1,12 @@
 # Linux
 
-## Reformat a Bootable USB back to normal
+## Table of Contents
+
+- [Linux](#linux)
+  - [Table of Contents](#table-of-contents)
+  - [Reformat a Bootable USB-stick back to normal](#reformat-a-bootable-usb-stick-back-to-normal)
+
+## Reformat a Bootable USB-stick back to normal
 
 Use `Disks` app to monitor file system partitions.
 
