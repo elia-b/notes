@@ -18,5 +18,5 @@ title: Jekyll
   
 - [Layout Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/04-layouts/)
 - [Assets Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/07-assets/)
-  - Whatch out into folder `assets/css` files shoulb be `css` files, wiki is wrong
+  - Whatch out into folder `assets/css` files should be `css` files, wiki is wrong
   - Scss
