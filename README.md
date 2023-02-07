@@ -1,6 +1,6 @@
 ---
-layout: default
 title: My Notes
+permalink: /
 ---
 
 my personal notes :notebook_with_decorative_cover:
