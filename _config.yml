@@ -1,8 +1,11 @@
----
-layout: default
-permalink: :title
----
-
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compact
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      permalink: ":title"
