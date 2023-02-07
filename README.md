@@ -1,6 +1,7 @@
 ---
 title: My Notes
 permalink: /
+layout: default
 ---
 
 my personal notes :notebook_with_decorative_cover:
