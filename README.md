@@ -1,17 +1,19 @@
----
-title: My Notes
-permalink: /
-layout: default
----
+# Development
 
-my personal notes :notebook_with_decorative_cover:
+Linting: VSCode
+[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+package
 
-- [Markdown help for notekeeping](md-utils.md)
+Install `make`, then:
 
-## Sections
-  
-### Tech-Skills
+```bash
+make build
+```
 
-- [Linux](linux.md)
-- [Python](python.md)
-- [Jekyll](jekyll.md)
+```bash
+make run
+```
+
+```bash
+make br
+```
