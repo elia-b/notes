@@ -1,0 +1,16 @@
+$breakpoints: (
+    "phone": 0,
+    "laptop": 750px,
+);
+
+@mixin phone {
+    @media (width > map-get($breakpoints, "phone")){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (width > map-get($breakpoints, "laptop")){
+        @content;
+    }
+}

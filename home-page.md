@@ -3,7 +3,9 @@ title: My Notes
 permalink: /
 ---
 
-my personal notes :notebook_with_decorative_cover:
+This is my corner of the web.
+
+A nook or cranny with personal notes.
 
 - [Markdown help for notekeeping](md-utils)
 

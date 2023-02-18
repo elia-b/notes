@@ -1,0 +1,75 @@
+@import "breakpoints";
+
+$headerHeight: 10rem;
+
+* {
+  margin: 0;
+  padding: 0; 
+  font-size: 0.9rem;
+  font-family: Helvetica, sans-serif;
+
+  @include laptop {
+    font-size: 1.1rem;
+  }
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+
+
+  .top {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+    @include laptop {
+      flex-direction: row;
+      align-items: normal;
+    }
+
+    header{
+      padding: 1rem;
+
+      @include laptop {
+        width: 20%;
+
+        .header-column {
+          display: flex; 
+          justify-content: flex-end;
+          position: sticky;
+          top: 0;
+        }
+        
+      }
+
+    }
+    
+    section{
+      margin: 1rem;
+      padding: 1rem;
+      flex: 1;
+      width: 100%;
+
+      @include laptop {
+        width: 60%;
+      }
+    }
+
+    .spacer{
+
+      @include laptop {
+        width: 20%;
+      }
+    }
+  }
+
+  footer{
+    padding: 1rem;
+  }
+}

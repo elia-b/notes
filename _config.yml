@@ -1,9 +1,12 @@
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 
 sass:
   style: compact
