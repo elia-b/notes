@@ -2,6 +2,8 @@
 
 $headerHeight: 10rem;
 
+$color-red: #cfcfcf;
+
 * {
   margin: 0;
   padding: 0; 
@@ -36,14 +38,22 @@ main{
     header{
       padding: 1rem;
 
+      .header-column {
+        display: flex; 
+        flex-direction: column;
+      }
+
       @include laptop {
         width: 20%;
 
         .header-column {
-          display: flex; 
-          justify-content: flex-end;
           position: sticky;
           top: 0;
+
+          .header-element{
+            display: flex; 
+            justify-content: flex-end;
+          }
         }
         
       }
@@ -55,6 +65,8 @@ main{
       padding: 1rem;
       flex: 1;
       width: 100%;
+      border-radius: 10px;
+      background-color: $color-red;
 
       @include laptop {
         width: 60%;
@@ -72,4 +84,17 @@ main{
   footer{
     padding: 1rem;
   }
+}
+
+
+button {
+  font-size: 1.5rem;
+  border-radius: 30%;
+  cursor: pointer; 
+  padding: 1rem;
+}
+
+
+button:hover {
+  background-color: $color-red;
 }
