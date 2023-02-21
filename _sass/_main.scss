@@ -2,7 +2,12 @@
 
 $headerHeight: 10rem;
 
-$color-red: #cfcfcf;
+$primary-light: #ffffff;
+$highlight-light: #4b2626;
+$secondary-light: #cfcfcf;
+
+$primary-light-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(145deg) brightness(111%) contrast(111%);
+$highlight-light-filter: invert(15%) sepia(14%) saturate(1771%) hue-rotate(314deg) brightness(108%) contrast(94%);
 
 * {
   margin: 0;
@@ -20,6 +25,7 @@ main{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: 100svh;
   align-items: center;
 
 
@@ -41,6 +47,7 @@ main{
       .header-column {
         display: flex; 
         flex-direction: column;
+        align-items: center;
       }
 
       @include laptop {
@@ -48,6 +55,7 @@ main{
 
         .header-column {
           position: sticky;
+          align-items: normal;
           top: 0;
 
           .header-element{
@@ -64,9 +72,8 @@ main{
       margin: 1rem;
       padding: 1rem;
       flex: 1;
-      width: 100%;
       border-radius: 10px;
-      background-color: $color-red;
+      background-color: $secondary-light;
 
       @include laptop {
         width: 60%;
@@ -88,13 +95,40 @@ main{
 
 
 button {
-  font-size: 1.5rem;
-  border-radius: 30%;
+  border-radius: 10px;
   cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   padding: 1rem;
+  background-color: $highlight-light;
+  border: none;
+
+  img {
+    filter: $primary-light-filter;
+  }
 }
 
 
 button:hover {
-  background-color: $color-red;
+  background-color: $secondary-light;
+
+  img {
+    filter: $highlight-light-filter;
+  }
+}
+
+img {
+  filter: $highlight-light-filter;
+}
+
+a {
+  color: $highlight-light;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-light;
 }
