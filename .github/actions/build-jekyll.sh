@@ -6,4 +6,6 @@ export PATH="$HOME/gems/bin:$PATH"
 
 gem install jekyll bundler
 
+ls -al
+
 jekyll build --source . --destination ./_site
