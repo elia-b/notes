@@ -4,7 +4,7 @@ permalink: /
 ---
 ![elia boscaini](assets/images/elia-boscaini.svg)
 
-This is my corner of the web.
+personal website, open to all, free from tracking or cookies, just a clean website.
 
 - [Markdown help for notekeeping](md-utils)
 
