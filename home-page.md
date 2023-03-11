@@ -2,10 +2,9 @@
 title: My Notes
 permalink: /
 ---
+![elia boscaini](assets/images/elia-boscaini.svg)
 
 This is my corner of the web.
-
-A nook or cranny with personal notes.
 
 - [Markdown help for notekeeping](md-utils)
 

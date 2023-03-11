@@ -1,101 +1,100 @@
-@import "breakpoints";
-
-$headerHeight: 10rem;
-
-$primary-light: #393741;
-$secondary-light: #525563;
-$highlight-light: #9ee1f5;
-$secondary-highlight-light: #acb7f1;
-
-$primary-light-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(145deg) brightness(111%) contrast(111%);
-$highlight-light-filter: invert(15%) sepia(14%) saturate(1771%) hue-rotate(314deg) brightness(108%) contrast(94%);
+@use "media/index" as media;
+@use "abstracts/index" as *;
 
 * {
   margin: 0;
   padding: 0; 
-  font-size: 1rem;
-  font-family: Helvetica, sans-serif;
-  color: $highlight-light;
+}
 
-  @include laptop {
+$text-color: var(--text-color);
+$background-color: var(--background-color);
+$accent-color: var(--accent-color);
+$backgroud-second-color: var(--background-second-color);
+
+body{
+  background-color: $background-color;
+  font-size: $normal-font-size;
+  font-family: $font-family;
+  color: $text-color;
+  accent-color: $accent-color;
+
+  @include media.laptop {
     font-size: 1.3rem;
   }
-}
-
-
-main{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-height: 100svh;
-  align-items: center;
-  background-color: $primary-light;
-
-
-  .top {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
   
-    @include laptop {
-      flex-direction: row;
-      align-items: normal;
-    }
+  main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+    align-items: center;
 
-    header{
-      padding: 1rem;
 
-      .header-column {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
+    .top {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    
+      @include media.laptop {
+        flex-direction: row;
+        align-items: normal;
       }
 
-      @include laptop {
-        width: 20%;
+      header{
+        padding: 1rem;
 
         .header-column {
-          position: sticky;
-          align-items: normal;
-          top: 0;
-
-          .header-element{
-            display: flex; 
-            justify-content: flex-end;
-          }
+          display: flex; 
+          flex-direction: column;
+          align-items: center;
         }
-        
+
+        @include media.laptop {
+          width: 20%;
+
+          .header-column {
+            position: sticky;
+            align-items: normal;
+            top: 0;
+
+            .header-element{
+              display: flex; 
+              justify-content: flex-end;
+            }
+          }
+          
+        }
+
+      }
+      
+      section{
+        margin: 1rem;
+        padding: 1rem;
+        flex: 1;
+        border-radius: 10px;
+        background-color: $backgroud-second-color;
+
+        @include media.laptop {
+          width: 60%;
+        }
       }
 
+      .spacer{
+
+        @include media.laptop {
+          width: 20%;
+        }
+      }
     }
-    
-    section{
-      margin: 1rem;
+
+    footer{
       padding: 1rem;
-      flex: 1;
-      border-radius: 10px;
-      background-color: $secondary-light;
-
-      @include laptop {
-        width: 60%;
-      }
+      color: $accent-color;
     }
-
-    .spacer{
-
-      @include laptop {
-        width: 20%;
-      }
-    }
-  }
-
-  footer{
-    padding: 1rem;
   }
 }
-
 
 button {
   border-radius: 30px;
@@ -106,34 +105,26 @@ button {
   width: 30px;
   height: 30px;
   padding: 1.2rem;
-  background-color: $secondary-highlight-light;
+  background-color: $accent-color;
+
   border: none;
 
-  img {
-    filter: $primary-light-filter;
-  }
 }
 
 
 button:hover {
-  background-color: $secondary-light;
+  background-color: $text-color;
 
-  img {
-    filter: $highlight-light-filter;
-  }
 }
 
-img {
-  filter: $highlight-light-filter;
-}
 
 a {
-  color: $secondary-highlight-light;
+  color: $accent-color;
   text-decoration: none;
 }
 
 a:hover {
-  color: $primary-light;
+  color: $text-color;
 }
 
 ul {
@@ -144,6 +135,7 @@ ul {
 
 p, h1, h2, h3, ul{
   padding-bottom: 0.7rem;
+  background-color: $backgroud-second-color;
 }
 
 ul, h2, h3{
@@ -163,11 +155,15 @@ pre {
   margin: 0.7rem 0;
   padding: 0.7rem;
   border-radius: 10px;
-  background-color: $primary-light;
+  background-color: $background-color;
 }
 
 .language-plaintext{
   padding: 0.1rem;
   border-radius: 10px;
-  background-color: $primary-light;
+  background-color: $background-color;
+}
+
+code {
+  font-family: $font-family;
 }

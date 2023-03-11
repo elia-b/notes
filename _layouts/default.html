@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script type="module" src="{{ '/assets/js/color.js' | relative_url }}"></script>
+    <script type="module" src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </head>
-  <body>
+  <body class="dark">
     <main>
       <div class="top">
       <header>
         <div class="header-column">
           <div class="header-element">
-            <a href="{{'/' | relative_url}}"><img src="{{ '/assets/images/logo.svg' | relative_url }}" height="100" width="100" /></a>
+            <a href="{{'/' | relative_url}}"><img src="{{ '/assets/images/swallow.svg' | relative_url }}" height="100" width="100" id="logo"/></a>
           </div>
           <div class="header-element">
-            <button><img src="{{ '/assets/images/moon.svg' | relative_url }}" height="30" width="30" /></i></button>
+            <button id="theme-button">
+              <img src="{{ '/assets/images/sun.svg' | relative_url }}" height="30" width="30" id="theme-button-image"/>
+            </button>
           </div>
         </div>
       </header>
@@ -25,7 +31,7 @@
       </section>
       <div class="spacer"></div>
       </div>
-      <footer>Thank you! -- elia</footer>
+      <footer>Thank you! • elia</footer>
     </main>
   </body>
 </html>
