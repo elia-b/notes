@@ -11,4 +11,4 @@ defaults:
 sass:
   style: compact
 
-baseurl: /notes/
+baseurl: "/notes"
