@@ -8,4 +8,6 @@ gem install jekyll bundler
 
 ls -al
 
+pwd
+
 jekyll build --source . --destination ./_site
