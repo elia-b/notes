@@ -30,7 +30,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
-        run: .github/workflows/jekyll-gh-pages.yml
+        run: |
+          chmod -x .github/workflows/jekyll-gh-pages.yml
+          .github/workflows/jekyll-gh-pages.yml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
