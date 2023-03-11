@@ -14,4 +14,4 @@ EXPOSE 4000
 
 COPY . /jekyll
 
-ENTRYPOINT bundle exec jekyll serve --host 0.0.0.0
+ENTRYPOINT ruby --version && jekyll --version && bundle exec jekyll serve --host 0.0.0.0

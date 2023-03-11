@@ -33,6 +33,7 @@ jobs:
         run: |
           chmod +x .github/workflows/jekyll-gh-pages.yml
           .github/workflows/jekyll-gh-pages.yml
+        shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
