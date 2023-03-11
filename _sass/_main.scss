@@ -151,11 +151,13 @@ h3 {
 }
 
 pre {
-  display: block;
+  display: flex;
   margin: 0.7rem 0;
   padding: 0.7rem;
   border-radius: 10px;
   background-color: $background-color;
+  flex-direction: row;
+  align-items: center;
 }
 
 .language-plaintext{
@@ -166,4 +168,5 @@ pre {
 
 code {
   font-family: $font-family;
+  flex: 1;
 }
