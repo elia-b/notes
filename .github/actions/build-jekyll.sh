@@ -10,4 +10,6 @@ ls -al
 
 pwd
 
+jekyll clean
+
 jekyll build --source . --destination ./_site
