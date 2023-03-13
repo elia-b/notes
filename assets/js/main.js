@@ -1,5 +1,5 @@
 import { Color, Solver } from './color.js'
-
+const baseUrl = "/notes"
 // Images
 
 const themeButtonImage = document.getElementById('theme-button-image')
@@ -63,7 +63,7 @@ function updateSvgColor(){
     changeSvgColor(title, bodyBackgroudColor)
   }
   const copyImages = document.querySelectorAll('img.copy-button-image')
-  console.log(copyImages)
+
   copyImages.forEach(function (copyImage) {changeSvgColor(copyImage, bodyBackgroudColor)})
 
   logo.addEventListener('mouseover', _ => {changeSvgColor(logo, bodyColor)})
@@ -84,13 +84,13 @@ function storeTheme (theme) {
 
 function addCopyButtons(){
   codeBlocks.forEach(function (codeBlock) {
-    console.log('fired')
+
     var  button = document.createElement('button')
      button.className = ' '
      button.type = 'button'
      button.ariaLabel = 'Copy code to clipboard'
      var  image = document.createElement('img')
-     image.src = "assets/images/copy.svg"
+     image.src = window.location.origin + baseUrl +"/assets/images/copy.svg"
      image.height = "20"
      image.width = "20"
      image.className = "copy-button-image"
