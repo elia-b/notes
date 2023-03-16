@@ -14,4 +14,6 @@ EXPOSE 4000
 
 COPY . /jekyll
 
-ENTRYPOINT ruby --version && jekyll --version && bundle exec jekyll serve --host 0.0.0.0
+RUN jekyll clean && jekyll build --source . --destination ./_site
+
+ENTRYPOINT jekyll serve --host 0.0.0.0
