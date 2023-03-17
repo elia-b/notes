@@ -9,8 +9,8 @@ title: Python
 
 ## Dependency Managment
 
-- [Poetry](python/poetry)
+- [Poetry]({{ site.baseurl }}/python/poetry)
 
 ## Packages
 
-- [Numpy](python/numpy)
+- [Numpy]({{ site.baseurl }}/python/numpy)
