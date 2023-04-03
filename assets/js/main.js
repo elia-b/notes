@@ -60,7 +60,7 @@ function updateSvgColor(){
   changeSvgColor(logo, hihglightColor)
   changeSvgColor(themeButtonImage, bodyBackgroudColor)
   if (title != null){
-    changeSvgColor(title, bodyBackgroudColor)
+    changeSvgColor(title, hihglightColor)
   }
   const copyImages = document.querySelectorAll('img.copy-button-image')
 
